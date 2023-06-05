@@ -38,3 +38,23 @@ for (let elm of arr2) {
 // タプル型
 // 要素数を超える位置にアクセスするとエラー
 let tuple: [string, number] = ["foo", 0];
+
+// Dateオブジェクト
+const d = new Date();
+console.log(d); 
+
+// 正規表現（簡易版）
+const r = /ab+c/;
+console.log(r.test("abc"));
+console.log(r.test("abbbbbc"));
+console.log(r.test("ac"));
+console.log(r.test("Hello, abc World"));
+console.log(r.test("ABC"));
+console.log(r.test("ab c"));
+
+// 連想配列 Map
+const map: Map<string, number> = new Map();
+map.set("foo", 1234);
+console.log(map);
+console.log(map.get("foo"));
+console.log(map.get("bar"));
